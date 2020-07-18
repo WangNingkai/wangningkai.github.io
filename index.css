@@ -554,13 +554,13 @@ body {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("https://i.loli.net/2019/06/28/5d15695a13a8889277.jpg");
+    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai.github.io/assets/bg.png");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("https://i.loli.net/2019/06/28/5d15695a13a8889277.jpg") center center fixed;
+    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai.github.io/assets/bg.png") center center fixed;
   --height: 50vh;
 }
 
