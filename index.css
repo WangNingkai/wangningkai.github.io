@@ -554,13 +554,13 @@ body {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai/assets/bg.jpg");
+    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai.github.io/assets/bg.jpg");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai/assets/bg.jpg") center center fixed;
+    url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai.github.io/assets/bg.jpg") center center fixed;
   --height: 50vh;
 }
 
@@ -591,6 +591,6 @@ body {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai/assets/bg.jpg") !important;
+      url("https://cdn.jsdelivr.net/gh/wangningkai/wangningkai.github.io/assets/bg.jpg") !important;
   }
 }
