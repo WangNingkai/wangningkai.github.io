@@ -13,7 +13,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  Bing-Spider:
+  Gitfolio-Spider:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "Fetch BingImage at $(date +'%Y-%m-%d %H:%M')" -a
+          git commit -m "Update Gitfolio at $(date +'%Y-%m-%d %H:%M')" -a
       - name: "Push changes"
         uses: ad-m/github-push-action@master
         with:
