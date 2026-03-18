@@ -1,4 +1,4 @@
-name: "Update Gitfolio"
+name: Update Gitfolio
 
 on:
   push:
@@ -6,8 +6,7 @@ on:
       - master
   schedule:
     - cron: "0 0 */3 * *"
-  watch:
-    types: [started]
+  workflow_dispatch:
 
 env:
   TZ: Asia/Shanghai
@@ -15,31 +14,38 @@ env:
 jobs:
   Gitfolio-Spider:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: "Set up Python"
-        uses: actions/setup-python@v1
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.10
-      - name: "Install dependencies"
-        run: python -m pip install --upgrade pip
-      - name: "Install requirements"
-        run: pip install -r ./requirements.txt
-      - name: "Logging"
+          python-version: "3.10"
+
+      - name: Install dependencies
         run: |
-          echo `date +"%Y-%m-%d %H:%M:%S"` > time.log
-      - name: "Working"
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Logging
+        run: echo "$(date +'%Y-%m-%d %H:%M:%S')" > time.log
+
+      - name: Working
         timeout-minutes: 350
         run: bash ./main.sh
+
       - name: Commit files
         run: |
           git config --local user.email "i@ningkai.wang"
           git config --local user.name "Wang Ningkai"
           git add -A
-          git commit -m "Update Gitfolio at $(date +'%Y-%m-%d %H:%M')" -a
-      - name: "Push changes"
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update Gitfolio at $(date +'%Y-%m-%d %H:%M')"
+
+      - name: Push changes
+        run: git push
