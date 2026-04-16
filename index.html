@@ -1,1 +1,754 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>WangNingkai</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Questrial&amp;display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="icon" href="https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&amp;v=4" type="image/png"><style type="text/css">*{box-sizing:border-box}body{margin:0;padding:0;width:100vw;max-width:100vw;overflow-x:hidden;background:var(--bg-color);color:var(--text-color);font-family:Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}#loading{width:100vw;height:100vh;position:fixed;background:var(--bg-color);z-index:999;display:flex;justify-content:center;align-items:center;top:0;left:0}#skeleton{width:100vw;height:100vh;display:flex;align-items:flex-start}.skeleton-profile{width:32vw;padding:5vh 4vw;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;top:0;left:0;background:var(--background-image) center center;background-size:cover!important;background-repeat:no-repeat;color:#fff!important}.skeleton-avatar{width:140px;height:140px;border-radius:50%;background:linear-gradient(90deg,rgba(255,255,255,.1) 25%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.1) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}.skeleton-name{width:60%;height:20px;margin:2vh 0;border-radius:4px;background:linear-gradient(90deg,rgba(255,255,255,.1) 25%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.1) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;animation-delay:.1s}.skeleton-bio{width:85%;height:16px;margin:1vh 0;border-radius:4px;background:linear-gradient(90deg,rgba(255,255,255,.1) 25%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.1) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;animation-delay:.2s}.skeleton-content{width:68vw;padding:5vh 4vw;margin-left:32vw;min-height:92vh;display:inline-block}.skeleton-title{width:100px;height:36px;border-radius:4px;color:var(--text-color);font-weight:600;font-family:Questrial,sans-serif;background:linear-gradient(90deg,rgba(128,128,128,.08) 25%,rgba(128,128,128,.15) 50%,rgba(128,128,128,.08) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;margin:1.5vh 0}.skeleton-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:3vh}.skeleton-card{width:100%;height:160px;border-radius:16px;background:linear-gradient(90deg,rgba(128,128,128,.06) 25%,rgba(128,128,128,.12) 50%,rgba(128,128,128,.06) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border:1px solid rgba(128,128,128,.08)}@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}#profile{width:32vw;padding:5vh 4vw;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;top:0;left:0;background:var(--background-image) center center;background-size:cover!important;background-repeat:no-repeat;color:#fff!important}#profile_img{width:140px;height:140px;border-radius:50%;background-size:cover!important;background-repeat:no-repeat!important;box-shadow:0 4px 20px rgba(0,0,0,.15);margin-bottom:2vh}#profile div{margin:1vh 0}#username{font-size:16px;font-weight:500;opacity:.85;text-align:center;width:100%}#username span{font-size:22px;font-weight:600;display:block;margin-top:.5vh}#userbio{font-size:20px;font-family:Questrial,sans-serif;font-weight:400;line-height:1.5;opacity:.95;margin:1.5vh 0;text-align:center;width:100%}#about{font-size:14px;font-family:Questrial,sans-serif;opacity:.75;display:inline-flex;flex-direction:column;align-items:flex-start}#about a,#username a{color:#fff!important;text-decoration:none;font-weight:500;transition:opacity .2s ease}#about a:hover,#username a:hover{opacity:.8}#about span{margin:.5vh 0;display:flex;align-items:center;gap:8px}#about span i{font-size:14px;width:18px;text-align:center;flex-shrink:0}.socials{margin:2.5vh 0!important;display:flex;gap:12px}.socials span{display:inline-flex!important;align-items:center;margin-right:0!important;font-weight:400!important;opacity:.8;transition:opacity .2s ease}.socials span:hover{opacity:1}.socials span i{font-size:16px}#display{width:68vw;padding:5vh 4vw;margin-left:32vw;min-height:92vh;display:inline-block}#display h1{font-size:32px;color:var(--text-color);font-weight:600;font-family:Questrial,sans-serif;margin-bottom:2vh;letter-spacing:-.5px}.emoji{width:16px;height:16px;vertical-align:middle}#forks,#work{margin-bottom:4vh}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.projects a{display:flex;text-decoration:none}.projects section{flex:1;padding:20px 24px;display:flex;flex-direction:column;border-radius:16px;background:var(--card-bg,rgba(128,128,128,.04));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--text-color);position:relative;transition:all .4s cubic-bezier(.4, 0, .2, 1);transform:translateY(0);overflow:hidden;box-shadow:inset 0 1px 0 0 rgba(255,255,255,.08),inset 0 -1px 0 0 rgba(0,0,0,.02),0 0 0 1px rgba(128,128,128,.08),0 2px 8px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.02)}.projects section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0,rgba(255,255,255,.12) 20%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.12) 80%,transparent 100%);opacity:.6;transition:opacity .4s ease;pointer-events:none}.projects section::after{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border-radius:17px;background:linear-gradient(135deg,rgba(99,102,241,.35) 0,rgba(139,92,246,.25) 25%,rgba(168,85,247,.2) 50%,rgba(217,70,239,.25) 75%,rgba(236,72,153,.35) 100%);opacity:0;transition:opacity .4s ease;pointer-events:none;z-index:-1}.projects section:hover{cursor:pointer;box-shadow:inset 0 1px 0 0 rgba(255,255,255,.1),0 8px 16px rgba(0,0,0,.06),0 16px 32px rgba(99,102,241,.08),0 0 0 1px transparent;transform:translateY(-4px)}.projects section:hover::before{opacity:1;background:linear-gradient(90deg,transparent 0,rgba(99,102,241,.3) 20%,rgba(168,85,247,.5) 50%,rgba(236,72,153,.3) 80%,transparent 100%)}.projects section:hover::after{opacity:1}.section_title{font-size:18px;font-weight:600;margin:0 0 10px 0;word-wrap:break-word;line-height:1.4;letter-spacing:-.02em}.about_section{flex:1;font-size:14px;font-family:Questrial,sans-serif;margin:0;font-weight:400;word-wrap:break-word;overflow:hidden;line-height:1.6;opacity:.7}.bottom_section{margin-top:16px;font-size:13px;display:flex;gap:14px;opacity:.55}.bottom_section span{display:inline-flex;align-items:center;gap:6px;font-weight:500;padding:4px 10px 4px 4px;border-radius:6px;background:rgba(128,128,128,.06);transition:background .2s ease}.bottom_section span:hover{background:rgba(128,128,128,.12)}.bottom_section span i{font-size:12px}.lang-tag{font-weight:500}.lang-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;flex-shrink:0;box-shadow:0 0 0 2px rgba(255,255,255,.1)}#footer{padding:6vh 0 4vh;text-align:center;opacity:.5}#footer a{color:var(--text-color)!important;text-decoration:none;font-family:Questrial,sans-serif;font-size:13px;font-weight:400;transition:opacity .2s ease}#footer a:hover{opacity:.8}.go_back{position:absolute;color:var(--text-color);font-size:20px;margin-left:4vw;margin-top:3vh;opacity:.6;transition:opacity .2s ease}.go_back:hover{opacity:1}::selection{color:var(--bg-color);background:var(--text-color)}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:var(--text-color);opacity:.3;border-radius:3px}::-webkit-scrollbar-thumb:hover{opacity:.5}@media (max-width:800px){#skeleton{flex-direction:column;align-items:center}#profile,.skeleton-profile{width:100vw;padding:4vh 6vw;height:auto;min-height:50vh;text-align:center;position:relative;align-items:center}#profile_img,.skeleton-avatar{width:100px;height:100px;margin:0 auto 1.5vh!important}#display,.skeleton-content{width:100vw;padding:4vh 6vw;margin-left:0;min-height:auto;display:block}.projects,.skeleton-grid{grid-template-columns:1fr;gap:16px}.projects a{display:block}.projects section{padding:16px 18px;min-height:auto}.skeleton-card{height:140px}#username span{font-size:20px}#userbio{font-size:18px}#display h1{font-size:26px}.section_title{font-size:15px}.about_section{font-size:13px}.bottom_section{font-size:11px;flex-wrap:wrap;gap:8px;margin-top:12px}.bottom_section span{padding:3px 8px 3px 3px;font-size:11px}.lang-tag{flex-shrink:0}.lang-dot{width:8px;height:8px;margin-right:5px}#about span{justify-content:center}.socials{justify-content:center}.go_back{position:relative;margin-left:0;top:2vh;left:6vw}}</style><style type="text/css">:root{--bg-color:#fafafa;--text-color:#1a1a1a;--card-bg:rgba(0, 0, 0, 0.02);--card-border:rgba(0, 0, 0, 0.06);--background-image:linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.75)),url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png')}@media (prefers-color-scheme:dark){:root{--bg-color:#0a0a0a;--text-color:#f0f0f0;--card-bg:rgba(255, 255, 255, 0.03);--card-border:rgba(255, 255, 255, 0.06);--background-image:linear-gradient(135deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.85)),url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png')}#display h1{font-weight:600}.projects section{background:rgba(255,255,255,.02)}.projects section:hover{background:rgba(255,255,255,.04);box-shadow:0 8px 32px rgba(0,0,0,.3)}}@media (max-width:800px){:root{--background-image:linear-gradient(180deg, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.4)),url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png')!important}}@media (max-width:800px) and (prefers-color-scheme:dark){:root{--background-image:linear-gradient(180deg, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.5)),url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png')!important}}</style></head><body><div id="loading"><div id="skeleton"><div class="skeleton-profile"><div class="skeleton-avatar"></div><div class="skeleton-name"></div><div class="skeleton-bio"></div></div><div class="skeleton-content"><h1 class="skeleton-title"></h1><div class="skeleton-grid"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div></div></div></div><div id="github"><a href="https://github.com/WangNingkai" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="color:#fff;fill:rgb(10,10,10);position:absolute;top:0;border:0;right:0" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></div><div id="profile"><div id="profile_img" style="background:url(https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&amp;v=4) center"></div><div id="username"><span style="display:block">Wang Ningkai</span><a href="https://github.com/WangNingkai">@WangNingkai</a></div><div id="userbio" style="display:block"><div>Talk is cheap. Show me the code.</div></div><div id="about"><span style="display:block"><i class="fas fa-users"></i> &nbsp; 147 followers · 118 following</span> <span style="display:block"><i class="fas fa-star"></i> &nbsp; 2.5k stars</span> <span style="display:block"><i class="fas fa-history"></i> &nbsp; 22.6k commits</span> <span style="display:none"><i class="fas fa-building"></i> &nbsp; </span><span style="display:none"><i class="fas fa-envelope"></i> &nbsp; </span><span style="display:block"><i class="fas fa-link"></i> &nbsp; <a href="https://me.ningkai.wang">https://me.ningkai.wang</a></span> <span style="display:block"><i class="fas fa-map-marker-alt"></i> &nbsp; China</span> <span style="display:block"><i class="fas fa-user-tie"></i> &nbsp; Available for hire</span></div></div><div id="display"><div id="work"><h1>Work.</h1><div class="projects" id="work_section"><a href="https://github.com/WangNingkai/OLAINDEX" target="_blank"><section><div class="section_title">OLAINDEX</div><div class="about_section"><span style="display:block">✨ Another OneDrive Directory Index</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 2.2k</span> <span><i class="fas fa-code-branch"></i>&nbsp; 578</span></div></section></a><a href="https://github.com/WangNingkai/gitfolio-online" target="_blank"><section><div class="section_title">gitfolio-online</div><div class="about_section"><span style="display:block"><img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle"> A personal portfolio website for every GitHub user.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span> <span><i class="fas fa-star"></i>&nbsp; 55</span> <span><i class="fas fa-code-branch"></i>&nbsp; 12</span></div></section></a><a href="https://github.com/WangNingkai/scriptable-scripts" target="_blank"><section><div class="section_title">scriptable-scripts</div><div class="about_section"><span style="display:block"></span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span> <span><i class="fas fa-star"></i>&nbsp; 51</span> <span><i class="fas fa-code-branch"></i>&nbsp; 21</span></div></section></a><a href="https://github.com/WangNingkai/Lablog" target="_blank"><section><div class="section_title">Lablog</div><div class="about_section"><span style="display:block">🔊 基于Laravel5个人博客系统</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#e34c26"></span>HTML</span> <span><i class="fas fa-star"></i>&nbsp; 43</span> <span><i class="fas fa-code-branch"></i>&nbsp; 18</span></div></section></a><a href="https://github.com/WangNingkai/ServerChan-Push" target="_blank"><section><div class="section_title">ServerChan-Push</div><div class="about_section"><span style="display:block">🔝 通过Serve酱自动发送微博、知乎、v2ex热门内容到微信</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#3572a5"></span>Python</span> <span><i class="fas fa-star"></i>&nbsp; 32</span> <span><i class="fas fa-code-branch"></i>&nbsp; 18</span></div></section></a><a href="https://github.com/WangNingkai/OLAINDEX-CMD" target="_blank"><section><div class="section_title">OLAINDEX-CMD</div><div class="about_section"><span style="display:block">🍀 Another OneDrive Command Line Client.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 17</span> <span><i class="fas fa-code-branch"></i>&nbsp; 12</span></div></section></a><a href="https://github.com/WangNingkai/BingImageApi" target="_blank"><section><div class="section_title">BingImageApi</div><div class="about_section"><span style="display:block">🔍 Bing每日图片抓取</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#3572a5"></span>Python</span> <span><i class="fas fa-star"></i>&nbsp; 13</span> <span><i class="fas fa-code-branch"></i>&nbsp; 7</span></div></section></a><a href="https://github.com/WangNingkai/visitor-badge-node" target="_blank"><section><div class="section_title">visitor-badge-node</div><div class="about_section"><span style="display:block">🔮 A badge generator service to count visitors of your markdown file.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span> <span><i class="fas fa-star"></i>&nbsp; 11</span> <span><i class="fas fa-code-branch"></i>&nbsp; 8</span></div></section></a><a href="https://github.com/WangNingkai/TeambitionIndex" target="_blank"><section><div class="section_title">TeambitionIndex</div><div class="about_section"><span style="display:block">✨ Another Teambition Directory Index.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#00add8"></span>Go</span> <span><i class="fas fa-star"></i>&nbsp; 10</span> <span><i class="fas fa-code-branch"></i>&nbsp; 2</span></div></section></a><a href="https://github.com/WangNingkai/go-shp" target="_blank"><section><div class="section_title">go-shp</div><div class="about_section"><span style="display:block">一个用于读写 ESRI Shapefile 格式的 Go 语言库。支持所有标准的 Shapefile 几何类型，包括点、线、面以及它们的 Z 值和 M 值变体。</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#00add8"></span>Go</span> <span><i class="fas fa-star"></i>&nbsp; 9</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/baidu-translation" target="_blank"><section><div class="section_title">baidu-translation</div><div class="about_section"><span style="display:block">🎉 百度翻译api接口</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 5</span> <span><i class="fas fa-code-branch"></i>&nbsp; 6</span></div></section></a><a href="https://github.com/WangNingkai/AutoApiRefresh" target="_blank"><section><div class="section_title">AutoApiRefresh</div><div class="about_section"><span style="display:block"></span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#3572a5"></span>Python</span> <span><i class="fas fa-star"></i>&nbsp; 4</span> <span><i class="fas fa-code-branch"></i>&nbsp; 1</span></div></section></a><a href="https://github.com/WangNingkai/micli" target="_blank"><section><div class="section_title">micli</div><div class="about_section"><span style="display:block">💥Take XiaoMi Cloud Service to the command line</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#00add8"></span>Go</span> <span><i class="fas fa-star"></i>&nbsp; 3</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/simple-dictionary" target="_blank"><section><div class="section_title">simple-dictionary</div><div class="about_section"><span style="display:block">📕一个简单快速的词库工具</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 3</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/wangningkai.github.io" target="_blank"><section><div class="section_title">wangningkai.github.io</div><div class="about_section"><span style="display:block">🚀 GitHub Pages</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#e34c26"></span>HTML</span> <span><i class="fas fa-star"></i>&nbsp; 3</span> <span><i class="fas fa-code-branch"></i>&nbsp; 1</span></div></section></a><a href="https://github.com/WangNingkai/ODUP" target="_blank"><section><div class="section_title">ODUP</div><div class="about_section"><span style="display:block">onedrive 命令行上传工具</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#3572a5"></span>Python</span> <span><i class="fas fa-star"></i>&nbsp; 1</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/github-trending" target="_blank"><section><div class="section_title">github-trending</div><div class="about_section"><span style="display:block"><img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle"> GitHub Trending API power by Python Sanic.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#3572a5"></span>Python</span> <span><i class="fas fa-star"></i>&nbsp; 1</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/WangNingkai" target="_blank"><section><div class="section_title">WangNingkai</div><div class="about_section"><span style="display:block">😄 A repository in GitHub for testing to display a box at main page of Profile.</span></div><div class="bottom_section"><span class="lang-tag" style="display:none"><span class="lang-dot" style="background:null"></span></span> <span><i class="fas fa-star"></i>&nbsp; 1</span> <span><i class="fas fa-code-branch"></i>&nbsp; 3</span></div></section></a><a href="https://github.com/WangNingkai/http" target="_blank"><section><div class="section_title">http</div><div class="about_section"><span style="display:block">A developer-experience focused HTTP client, optimized for most common use cases.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 1</span> <span><i class="fas fa-code-branch"></i>&nbsp; 0</span></div></section></a><a href="https://github.com/WangNingkai/laravel-mde" target="_blank"><section><div class="section_title">laravel-mde</div><div class="about_section"><span style="display:block">✔ 现代、简洁、易用的Markdown编辑器</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex"><span class="lang-dot" style="background:#4f5d95"></span>PHP</span> <span><i class="fas fa-star"></i>&nbsp; 1</span> <span><i class="fas fa-code-branch"></i>&nbsp; 1</span></div></section></a></div></div><div id="forks" style="display:none"><h1>Forks.</h1><div class="projects" id="forks_section"></div></div><div id="footer"><a href="https://github.com/wangningkai" target="_blank">made on earth by a human</a></div></div><script type="text/javascript">setTimeout(function(){document.getElementById("loading").classList.add("animated"),document.getElementById("loading").classList.add("fadeOut"),setTimeout(function(){document.getElementById("loading").classList.remove("animated"),document.getElementById("loading").classList.remove("fadeOut"),document.getElementById("loading").style.display="none"},600)},600)</script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Wang Ningkai — GitHub Portfolio</title><meta name="description" content="Talk is cheap. Show me the code.
+"><meta property="og:type" content="profile"><meta property="og:title" content="Wang Ningkai — GitHub Portfolio"><meta property="og:description" content="WangNingkai's GitHub portfolio"><meta property="og:image" content="https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&amp;v=4"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Wang Ningkai — GitHub Portfolio"><meta property="twitter:description" content="WangNingkai's GitHub portfolio"><meta property="twitter:image" content="https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&amp;v=4"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Questrial&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="icon" href="https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&v=4" type="image/png"><style>/* Auto Theme - Follows System Preference */
+/* Light mode by default, dark when system prefers dark */
+
+:root {
+  --bg-color: #fafafa;
+  --text-color: #1a1a1a;
+  --card-bg: rgba(0, 0, 0, 0.02);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.75)),
+    url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png');
+}
+
+/* Dark mode when system prefers dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0a0a0a;
+    --text-color: #f0f0f0;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.06);
+    --background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.85)),
+      url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png');
+  }
+
+  #display h1 {
+    font-weight: 600;
+  }
+
+  .projects section {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .projects section:hover {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Mobile - Light */
+@media (max-width: 800px) {
+  :root {
+    --background-image: linear-gradient(180deg, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.4)),
+      url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png') !important;
+  }
+}
+
+/* Mobile - Dark */
+@media (max-width: 800px) and (prefers-color-scheme: dark) {
+  :root {
+    --background-image: linear-gradient(180deg, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.5)),
+      url('https://cdn.jsdelivr.net/gh/WangNingkai/BingImageApi@latest/images/latest.png') !important;
+  }
+}</style><style>/* ========================================
+   Gitfolio - Minimalist & Elegant Design
+   ======================================== */
+
+/* Base Typography & Layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family:
+    'Poppins',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Loading State */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: var(--bg-color);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+#skeleton {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Skeleton - Left Profile */
+.skeleton-profile {
+  width: 32vw;
+  padding: 5vh 4vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--background-image) center center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  color: #fff !important;
+}
+
+.skeleton-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-name {
+  width: 60%;
+  height: 20px;
+  margin: 2vh 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.1s;
+}
+
+.skeleton-bio {
+  width: 85%;
+  height: 16px;
+  margin: 1vh 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+/* Skeleton - Right Content */
+.skeleton-content {
+  width: 68vw;
+  padding: 5vh 4vw;
+  margin-left: 32vw;
+  min-height: 92vh;
+  display: inline-block;
+}
+
+.skeleton-title {
+  width: 100px;
+  height: 36px;
+  border-radius: 4px;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: 'Questrial', sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(128, 128, 128, 0.08) 25%,
+    rgba(128, 128, 128, 0.15) 50%,
+    rgba(128, 128, 128, 0.08) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  margin: 1.5vh 0;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 3vh;
+}
+
+.skeleton-card {
+  width: 100%;
+  height: 160px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(128, 128, 128, 0.06) 25%,
+    rgba(128, 128, 128, 0.12) 50%,
+    rgba(128, 128, 128, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border: 1px solid rgba(128, 128, 128, 0.08);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Profile Section - Left Panel */
+#profile {
+  width: 32vw;
+  padding: 5vh 4vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--background-image) center center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  color: #fff !important;
+}
+
+#profile_img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2vh;
+}
+
+#profile div {
+  margin: 1vh 0;
+}
+
+#username {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.85;
+  text-align: center;
+  width: 100%;
+}
+
+#username span {
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.5vh;
+}
+
+#userbio {
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.95;
+  margin: 1.5vh 0;
+  text-align: center;
+  width: 100%;
+}
+
+#about {
+  font-size: 14px;
+  font-family: 'Questrial', sans-serif;
+  opacity: 0.75;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#about a,
+#username a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+#about a:hover,
+#username a:hover {
+  opacity: 0.8;
+}
+
+#about span {
+  margin: 0.5vh 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#about span i {
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Social Links */
+.socials {
+  margin: 2.5vh 0 !important;
+  display: flex;
+  gap: 12px;
+}
+
+.socials span {
+  display: inline-flex !important;
+  align-items: center;
+  margin-right: 0 !important;
+  font-weight: 400 !important;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.socials span:hover {
+  opacity: 1;
+}
+
+.socials span i {
+  font-size: 16px;
+}
+
+/* Main Content - Right Panel */
+#display {
+  width: 68vw;
+  padding: 5vh 4vw;
+  margin-left: 32vw;
+  min-height: 92vh;
+  display: inline-block;
+}
+
+#display h1 {
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: 'Questrial', sans-serif;
+  margin-bottom: 2vh;
+  letter-spacing: -0.5px;
+}
+
+/* Emoji Icons */
+.emoji {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* Projects Grid */
+#work,
+#forks {
+  margin-bottom: 4vh;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.projects a {
+  display: flex;
+  text-decoration: none;
+}
+
+.projects section {
+  flex: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--card-bg, rgba(128, 128, 128, 0.04));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-color);
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  overflow: hidden;
+  /* 多层边框 + 阴影效果 */
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.02),
+    0 0 0 1px rgba(128, 128, 128, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+/* 顶部内发光线 */
+.projects section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 20%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.12) 80%,
+    transparent 100%
+  );
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* hover 渐变光边 + 底部光晕 */
+.projects section::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.35) 0%,
+    rgba(139, 92, 246, 0.25) 25%,
+    rgba(168, 85, 247, 0.2) 50%,
+    rgba(217, 70, 239, 0.25) 75%,
+    rgba(236, 72, 153, 0.35) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.projects section:hover {
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(99, 102, 241, 0.08),
+    0 0 0 1px transparent;
+  transform: translateY(-4px);
+}
+
+.projects section:hover::before {
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(99, 102, 241, 0.3) 20%,
+    rgba(168, 85, 247, 0.5) 50%,
+    rgba(236, 72, 153, 0.3) 80%,
+    transparent 100%
+  );
+}
+
+.projects section:hover::after {
+  opacity: 1;
+}
+
+.section_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  word-wrap: break-word;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.about_section {
+  flex: 1;
+  font-size: 14px;
+  font-family: 'Questrial', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.bottom_section {
+  margin-top: 16px;
+  font-size: 13px;
+  display: flex;
+  gap: 14px;
+  opacity: 0.55;
+}
+
+.bottom_section span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  padding: 4px 10px 4px 4px;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.06);
+  transition: background 0.2s ease;
+}
+
+.bottom_section span:hover {
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.bottom_section span i {
+  font-size: 12px;
+}
+
+/* Language Tag with Color Dot */
+.lang-tag {
+  font-weight: 500;
+}
+
+.lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+#footer {
+  padding: 6vh 0 4vh;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#footer a {
+  color: var(--text-color) !important;
+  text-decoration: none;
+  font-family: 'Questrial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+
+/* Back Navigation */
+.go_back {
+  position: absolute;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-left: 4vw;
+  margin-top: 3vh;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.go_back:hover {
+  opacity: 1;
+}
+
+/* Selection */
+::selection {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  opacity: 0.3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+  #skeleton {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skeleton-profile,
+  #profile {
+    width: 100vw;
+    padding: 4vh 6vw;
+    height: auto;
+    min-height: 50vh;
+    text-align: center;
+    position: relative;
+    align-items: center;
+  }
+
+  .skeleton-avatar,
+  #profile_img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5vh !important;
+  }
+
+  .skeleton-content,
+  #display {
+    width: 100vw;
+    padding: 4vh 6vw;
+    margin-left: 0;
+    min-height: auto;
+    display: block;
+  }
+
+  .skeleton-grid,
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 移动端卡片修复 */
+  .projects a {
+    display: block;
+  }
+
+  .projects section {
+    padding: 16px 18px;
+    min-height: auto;
+  }
+
+  .skeleton-card {
+    height: 140px;
+  }
+
+  #username span {
+    font-size: 20px;
+  }
+
+  #userbio {
+    font-size: 18px;
+  }
+
+  #display h1 {
+    font-size: 26px;
+  }
+
+  .section_title {
+    font-size: 15px;
+  }
+
+  .about_section {
+    font-size: 13px;
+  }
+
+  .bottom_section {
+    font-size: 11px;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .bottom_section span {
+    padding: 3px 8px 3px 3px;
+    font-size: 11px;
+  }
+
+  .lang-tag {
+    flex-shrink: 0;
+  }
+
+  .lang-dot {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+
+  #about span {
+    justify-content: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .go_back {
+    position: relative;
+    margin-left: 0;
+    top: 2vh;
+    left: 6vw;
+  }
+}
+
+/* Focus Styles — Keyboard Navigation */
+.projects section:focus-within {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+}
+
+#profile a:focus,
+#footer a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Reduced Motion — Respect User Preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .skeleton-avatar,
+  .skeleton-name,
+  .skeleton-bio,
+  .skeleton-title,
+  .skeleton-card {
+    animation: none !important;
+    background-image: none !important;
+    background-color: rgba(128, 128, 128, 0.12) !important;
+  }
+}
+</style></head><body><div id="loading" role="status" aria-live="polite" aria-label="Loading portfolio content"><div id="skeleton" aria-hidden="true"><div class="skeleton-profile"><div class="skeleton-avatar"></div><div class="skeleton-name"></div><div class="skeleton-bio"></div></div><div class="skeleton-content"><h1 class="skeleton-title"></h1><div class="skeleton-grid"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div></div></div></div><a href="https://github.com/WangNingkai" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="color:#fff; fill:rgb(10, 10, 10); position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style><div id="profile" role="region" aria-label="User profile"><div id="profile_img" style="background:url('https://avatars.githubusercontent.com/u/23030927?u=7639da3988910bd39b6545d4f1a68d6bdb210819&v=4') center center"></div><div id="username"><span style="display:block;">Wang Ningkai</span><a href="https://github.com/WangNingkai">@WangNingkai</a></div><div id="userbio"><div style="display:block;"><div>Talk is cheap. Show me the code.
+</div></div></div><div id="about"><span style="display:block;"><i class="fas fa-users"></i> &nbsp;147 followers · 118 following</span>
+<span style="display:block"><i class="fas fa-star"></i> &nbsp;2.5k stars</span>
+<span style="display:block"><i class="fas fa-history"></i> &nbsp;22.7k commits</span>
+<span style="display:none;"><i class="fas fa-building"></i> &nbsp;</span>
+<span style="display:none;"><i class="fas fa-envelope"></i> &nbsp;</span>
+<span style="display:block;"><i class="fas fa-link"></i> &nbsp;<a href="https://me.ningkai.wang">https://me.ningkai.wang</a></span>
+<span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;China</span>
+<span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;Available for hire</span></div></div><div id="display" role="main"><div id="work" role="region" aria-label="Work projects"><h1>Work.</h1><div class="projects" id="work_section" aria-live="polite"><a href="https://github.com/WangNingkai/OLAINDEX" target="_blank"><section><div class="section_title">OLAINDEX</div><div class="about_section"><span style="display:block;">✨ Another OneDrive Directory Index</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;2.2k</span><span><i class="fas fa-code-branch"></i>&nbsp;577</span></div></section></a><a href="https://github.com/WangNingkai/gitfolio-online" target="_blank"><section><div class="section_title">gitfolio-online</div><div class="about_section"><span style="display:block;"><img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle"> A personal portfolio website for every GitHub user.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span><span><i class="fas fa-star"></i>&nbsp;55</span><span><i class="fas fa-code-branch"></i>&nbsp;12</span></div></section></a><a href="https://github.com/WangNingkai/scriptable-scripts" target="_blank"><section><div class="section_title">scriptable-scripts</div><div class="about_section"><span style="display:none;"></span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span><span><i class="fas fa-star"></i>&nbsp;51</span><span><i class="fas fa-code-branch"></i>&nbsp;21</span></div></section></a><a href="https://github.com/WangNingkai/Lablog" target="_blank"><section><div class="section_title">Lablog</div><div class="about_section"><span style="display:block;">🔊 基于Laravel5个人博客系统</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#e34c26"></span>HTML</span><span><i class="fas fa-star"></i>&nbsp;43</span><span><i class="fas fa-code-branch"></i>&nbsp;18</span></div></section></a><a href="https://github.com/WangNingkai/ServerChan-Push" target="_blank"><section><div class="section_title">ServerChan-Push</div><div class="about_section"><span style="display:block;">🔝 通过Serve酱自动发送微博、知乎、v2ex热门内容到微信</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#3572A5"></span>Python</span><span><i class="fas fa-star"></i>&nbsp;32</span><span><i class="fas fa-code-branch"></i>&nbsp;18</span></div></section></a><a href="https://github.com/WangNingkai/OLAINDEX-CMD" target="_blank"><section><div class="section_title">OLAINDEX-CMD</div><div class="about_section"><span style="display:block;">🍀 Another OneDrive Command Line Client.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;17</span><span><i class="fas fa-code-branch"></i>&nbsp;12</span></div></section></a><a href="https://github.com/WangNingkai/BingImageApi" target="_blank"><section><div class="section_title">BingImageApi</div><div class="about_section"><span style="display:block;">🔍 Bing每日图片抓取</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#3572A5"></span>Python</span><span><i class="fas fa-star"></i>&nbsp;13</span><span><i class="fas fa-code-branch"></i>&nbsp;7</span></div></section></a><a href="https://github.com/WangNingkai/visitor-badge-node" target="_blank"><section><div class="section_title">visitor-badge-node</div><div class="about_section"><span style="display:block;">🔮 A badge generator service to count visitors of your markdown file.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span><span><i class="fas fa-star"></i>&nbsp;11</span><span><i class="fas fa-code-branch"></i>&nbsp;8</span></div></section></a><a href="https://github.com/WangNingkai/TeambitionIndex" target="_blank"><section><div class="section_title">TeambitionIndex</div><div class="about_section"><span style="display:block;">✨ Another Teambition Directory Index. </span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#00ADD8"></span>Go</span><span><i class="fas fa-star"></i>&nbsp;10</span><span><i class="fas fa-code-branch"></i>&nbsp;2</span></div></section></a><a href="https://github.com/WangNingkai/go-shp" target="_blank"><section><div class="section_title">go-shp</div><div class="about_section"><span style="display:block;">一个用于读写 ESRI Shapefile 格式的 Go 语言库。支持所有标准的 Shapefile 几何类型，包括点、线、面以及它们的 Z 值和 M 值变体。</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#00ADD8"></span>Go</span><span><i class="fas fa-star"></i>&nbsp;9</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/baidu-translation" target="_blank"><section><div class="section_title">baidu-translation</div><div class="about_section"><span style="display:block;">🎉 百度翻译api接口</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;5</span><span><i class="fas fa-code-branch"></i>&nbsp;6</span></div></section></a><a href="https://github.com/WangNingkai/AutoApiRefresh" target="_blank"><section><div class="section_title">AutoApiRefresh</div><div class="about_section"><span style="display:none;"></span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#3572A5"></span>Python</span><span><i class="fas fa-star"></i>&nbsp;4</span><span><i class="fas fa-code-branch"></i>&nbsp;1</span></div></section></a><a href="https://github.com/WangNingkai/micli" target="_blank"><section><div class="section_title">micli</div><div class="about_section"><span style="display:block;">💥Take XiaoMi Cloud Service to the command line</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#00ADD8"></span>Go</span><span><i class="fas fa-star"></i>&nbsp;3</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/simple-dictionary" target="_blank"><section><div class="section_title">simple-dictionary</div><div class="about_section"><span style="display:block;"> 📕一个简单快速的词库工具</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;3</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/wangningkai.github.io" target="_blank"><section><div class="section_title">wangningkai.github.io</div><div class="about_section"><span style="display:block;">🚀 GitHub Pages</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#e34c26"></span>HTML</span><span><i class="fas fa-star"></i>&nbsp;3</span><span><i class="fas fa-code-branch"></i>&nbsp;1</span></div></section></a><a href="https://github.com/WangNingkai/ODUP" target="_blank"><section><div class="section_title">ODUP</div><div class="about_section"><span style="display:block;">onedrive 命令行上传工具</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#3572A5"></span>Python</span><span><i class="fas fa-star"></i>&nbsp;1</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/github-trending" target="_blank"><section><div class="section_title">github-trending</div><div class="about_section"><span style="display:block;"><img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle"> GitHub Trending API power by Python Sanic.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#3572A5"></span>Python</span><span><i class="fas fa-star"></i>&nbsp;1</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/WangNingkai" target="_blank"><section><div class="section_title">WangNingkai</div><div class="about_section"><span style="display:block;"> 😄 A repository in GitHub for testing to display a box at main page of Profile.</span></div><div class="bottom_section"><span class="lang-tag" style="display:none;"><span class="lang-dot" style="background:null"></span></span><span><i class="fas fa-star"></i>&nbsp;1</span><span><i class="fas fa-code-branch"></i>&nbsp;3</span></div></section></a><a href="https://github.com/WangNingkai/http" target="_blank"><section><div class="section_title">http</div><div class="about_section"><span style="display:block;">A developer-experience focused HTTP client, optimized for most common use cases.</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;1</span><span><i class="fas fa-code-branch"></i>&nbsp;0</span></div></section></a><a href="https://github.com/WangNingkai/laravel-mde" target="_blank"><section><div class="section_title">laravel-mde</div><div class="about_section"><span style="display:block;">✔ 现代、简洁、易用的Markdown编辑器</span></div><div class="bottom_section"><span class="lang-tag" style="display:inline-flex;"><span class="lang-dot" style="background:#4F5D95"></span>PHP</span><span><i class="fas fa-star"></i>&nbsp;1</span><span><i class="fas fa-code-branch"></i>&nbsp;1</span></div></section></a></div></div><div id="forks" style="display:none" role="region" aria-label="Forked projects"><h1>Forks.</h1><div class="projects" id="forks_section"></div></div><div id="footer"><a href="https://github.com/wangningkai" target="_blank">made on earth by a human</a></div></div><script type="text/javascript">setTimeout(function(){document.getElementById('loading').classList.add('animated'),document.getElementById('loading').classList.add('fadeOut'),setTimeout(function(){document.getElementById('loading').classList.remove('animated'),document.getElementById('loading').classList.remove('fadeOut'),document.getElementById('loading').style.display='none'},600)},600)</script></body></html>
